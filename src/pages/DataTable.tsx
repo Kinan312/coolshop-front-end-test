@@ -54,10 +54,10 @@ const DataTable = () => {
 
     // the function processes the calculation type if the sign is (+) or (-) then call 'calculationResult' function
     const changeCalculationType = (ev: any, index: number) => {
+        const { value } = ev.target;
         const rowsInput = [...rowsData];
-        rowsInput[index].calculationType = ev.target.value;
+        rowsInput[index].calculationType = value;
         calculationResult(rowsData);
-
     }
     
     const handleChange = (ev: any, index: number) => {

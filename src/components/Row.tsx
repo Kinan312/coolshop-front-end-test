@@ -21,7 +21,7 @@ function RowInput({ rowData, index, deleteRow, handleChange, toggleRowState, cha
 
     return (
         <div className="flex-view">
-            <select className="input" disabled={!rowData.enabled} value={rowData.calculationType} onChange={(ev) => changeCalculationType(ev, index)}>
+            <select className="input" disabled={!rowData.enabled}  onChange={(ev) => changeCalculationType(ev, index)}>
                 <option value="add">+</option>
                 <option value="subtract">-</option>
             </select>
